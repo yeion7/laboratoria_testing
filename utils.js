@@ -28,9 +28,12 @@ const startGame = cb => {
   }, 10000);
 };
 
+const getID = () => '_' + Math.random().toString(36).substr(2, 9);
+
 module.exports = {
   kebab,
   countWords,
   getCoffee,
-  startGame
+  startGame,
+  getID
 }
